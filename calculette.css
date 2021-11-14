@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.calculatrtice{
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.ecran{
+  background-color: grey;
+  height: 100px;
+}
+
+.clavier {
+  display:grid;
+  grid-template-columns:  60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+}
+
+button[data-key = "13"]{
+  grid-column: span 2;
+}
